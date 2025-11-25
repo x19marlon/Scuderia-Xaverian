@@ -681,7 +681,7 @@ body {
   width: 70vw;
 }
 
-@media (max-width: 400px){
+@media (max-width: 480px){
   #hero {
   width: 100%;
   height: 50vh;
