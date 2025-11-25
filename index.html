@@ -24,13 +24,7 @@
         <a href="" id="title">MISION</a>
         <a href="" id="title">PATROCINIOS</a>
         <a href="" id="title">NOTICIAS</a>
-        <a href="" id="escudo-javeriana"
-          ><img
-            src="/assets/javeriana escudo.png"
-            alt="escudo de la PUJ"
-            width="100px"
-            id="escudo-javeriana"
-        /></a>
+        
       </div>
       <div id="tipografia">
         <div id="linea1"></div>
@@ -60,7 +54,6 @@
           id="quien-img"
           src="assets/xaverian/assets/a.jpeg"
           alt=""
-          width="500px"
         />
       </div>
     </section>
@@ -183,6 +176,7 @@
         // Optional parameters
         direction: "horizontal",
         loop: true,
+        
 
         // If we need pagination
 
@@ -196,17 +190,18 @@
         scrollbar: {
           el: ".swiper-scrollbar",
         },
-        // breakpoints: {
-        //   0: {          // cel
-        //     slidesPerView: 1,
-        //   },
-        //   768: {        // tablet
-        //     slidesPerView: 2,
-        //   },
-        //   1024: {       // pc
-        //     slidesPerView: 3,
-        //   },
-        // },
+        breakpoints: {
+          0: {          // cel
+            slidesPerView: 1,
+            allowTouchMove:true,
+          },
+          768: {        // tablet
+            slidesPerView: 2,
+          },
+          1024: {       // pc
+            slidesPerView: 3,
+          },
+        },
       });
     </script>
   </body>
