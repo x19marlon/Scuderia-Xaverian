@@ -1,0 +1,678 @@
+@font-face {
+  font-family: "codec-pro";
+  src: url(/codec-pro.regular.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@keyframes scale-animation {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+@font-face {
+  font-family: "Paalalabas Condensed";
+  src: url("/assets/fonts/paalalabas/PaalalabasCondensed.woff2") format("woff2"),
+    url("/assets/fonts/paalalabas/PaalalabasCondensed.woff") format("woff");
+  font-weight: 400; /* ajusta si tenés más pesos */
+  font-style: normal;
+  font-display: swap; /* mejor rendimiento */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+#hero {
+  height: 100vh;
+  background-image: url(/assets/BgImgHero.png);
+  background-size: cover;
+  background-position-y: -60px;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+#hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 100px; /* grosor del fade */
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 20%,
+    #f7f7f4 100%
+  );
+}
+#header {
+  background-color: #0d0e0eb3;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: fixed;
+  z-index: 5;
+}
+
+#title {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  gap: 20px;
+}
+
+#title:hover {
+  color: #fec713;
+  text-decoration: underline;
+  text-underline-offset: 3px; /* más bonito */
+  text-decoration-thickness: 2px;
+  animation: scale-animation 1.24s
+    linear(
+      0,
+      0.0114,
+      0.0427,
+      0.0898,
+      0.149,
+      0.2169,
+      0.2906,
+      0.3673,
+      0.445,
+      0.5216,
+      0.5958,
+      0.6663,
+      0.7321,
+      0.7926,
+      0.8474,
+      0.8962,
+      0.9389,
+      0.9758,
+      1.0069,
+      1.0325,
+      1.053,
+      1.0689,
+      1.0805,
+      1.0884,
+      1.093,
+      1.0947,
+      1.0941,
+      1.0915,
+      1.0873,
+      1.0819,
+      1.0756,
+      1.0687,
+      1.0614,
+      1.0541,
+      1.0468,
+      1.0397,
+      1.0329,
+      1.0266,
+      1.0208,
+      1.0155,
+      1.0107,
+      1.0066,
+      1.003,
+      0.9999,
+      0.9974,
+      0.9953,
+      0.9937,
+      0.9926,
+      0.9917,
+      0.9913,
+      0.991,
+      0.9911,
+      0.9913,
+      0.9916,
+      0.9921,
+      0.9927,
+      0.9934,
+      0.994,
+      0.9947,
+      0.9954,
+      0.9961,
+      0.9968,
+      0.9974,
+      0.9979,
+      0.9984,
+      0.9989,
+      0.9993,
+      0.9997,
+      1,
+      1.0002,
+      1.0004,
+      1.0006,
+      1.0007,
+      1.0008,
+      1.0008,
+      1.0008,
+      1.0008,
+      1.0008,
+      1.0008,
+      1.0008,
+      1.0007,
+      1.0006,
+      1.0006,
+      1.0005,
+      1.0004,
+      1.0004,
+      1.0003,
+      1.0003,
+      1.0002,
+      1.0002,
+      1.0001,
+      1.0001,
+      1,
+      1,
+      1,
+      1,
+      0.9999,
+      0.9999,
+      0.9999,
+      0.9999,
+      1
+    )
+    forwards;
+}
+#linea1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #ffffff;
+  width: 30vw;
+  height: 10px;
+  margin-top: 9vh;
+  border-radius: 9999px;
+}
+#cuando {
+  font-size: 50px;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-top: 6vh;
+  margin-left: 31vw;
+  z-index: 5;
+  width: 300px;
+  cursor: default;
+}
+#cuando:hover {
+  color: #fec713;
+}
+#inge {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  margin-left: 12vw;
+  margin-top: 11vh;
+  z-index: 3;
+  cursor: default;
+}
+#inge:hover {
+  color: #fec713;
+}
+#convierte {
+  grid-column: 2/3;
+  margin-top: 6.5vh;
+  padding-left: 17vw;
+  width: 300px;
+  cursor: default;
+}
+#convierte:hover {
+  color: #fec713;
+}
+#en {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin-top: 2vh;
+  margin-left: 21vw;
+  z-index: 5;
+  width: 50px;
+  cursor: default;
+}
+#en:hover {
+  color: #fec713;
+}
+#arte {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  padding-left: 25vw;
+  z-index: 2;
+  line-height: 0.6;
+  cursor: default;
+}
+#arte:hover {
+  color: #fec713;
+}
+#escuderia {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  line-height: 0.5;
+  padding-left: 13vw;
+  cursor: default;
+}
+#escuderia:hover {
+  color: #fec713;
+}
+#linea2 {
+  background-color: #ffffff;
+  width: 38vw;
+  height: 10px;
+  margin-top: 12vh;
+  grid-column: 1/3;
+  grid-row: 4/5;
+  border-radius: 9999px;
+}
+#escudo-javeriana {
+  padding-left: 23vw;
+}
+#tipografia {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 75%;
+  height: 75%;
+  padding-top: 20vh;
+}
+.texto_header_1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 200px;
+  margin: 0;
+}
+.texto_header_2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 120px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -0.07em;
+  margin: 0;
+}
+
+#quien {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url(/assets/ChatGPT\ Image\ Nov\ 7\,\ 2025\,\ 05_30_20\ PM.png);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+#quien::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 150px; /* alto del desenfoque, súbelo/bájalo si quieres */
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  pointer-events: none;
+}
+
+#quien-contain-left {
+  margin-top: 34vh;
+}
+#quien-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 20vw;
+}
+
+#quien-text {
+  width: 40vw;
+  font-size: 20px;
+  font-family: "codec-pro";
+  padding-left: 10vw;
+  line-height: 23px;
+}
+
+#quien-img {
+  padding-left: 8vw;
+  padding-top: 30vh;
+}
+
+#people {
+  background-image: url(/assets/people.png);
+  background-color: #fff;
+  background-size: cover;
+  height: 100vh;
+}
+
+.swiper {
+  margin-top: 10vh;
+  width: 80%;
+  height: auto;
+}
+
+.swiper img {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column; /* ⭐ ahora es columna: img arriba, texto abajo */
+  align-items: center; /* centra horizontalmente */
+  text-decoration: none;
+  color: black;
+}
+
+.swiper-wrapper {
+  overflow: visible !important;
+}
+
+.swiper-button-prev {
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-button-prev img {
+  width: 100px;
+  height: 70px;
+  padding-left: 2vw;
+  margin-bottom: 5vh;
+}
+.swiper-button-next {
+  width: 300px;
+  height: 300px;
+  padding-right: 2vw;
+}
+
+.swiper-button-next img {
+  width: 100px;
+  height: 70px;
+  margin-bottom: 5vh;
+}
+.swiper-slide:hover {
+  animation: scale-animation 1.76s
+    linear(
+      0,
+      0.0146,
+      0.0548,
+      0.1153,
+      0.1911,
+      0.2776,
+      0.3706,
+      0.4665,
+      0.562,
+      0.6545,
+      0.7419,
+      0.8225,
+      0.8951,
+      0.9589,
+      1.0137,
+      1.0591,
+      1.0956,
+      1.1235,
+      1.1434,
+      1.156,
+      1.1621,
+      1.1626,
+      1.1585,
+      1.1505,
+      1.1396,
+      1.1264,
+      1.1118,
+      1.0964,
+      1.0807,
+      1.0653,
+      1.0505,
+      1.0367,
+      1.0241,
+      1.0128,
+      1.003,
+      0.9946,
+      0.9878,
+      0.9824,
+      0.9784,
+      0.9757,
+      0.9741,
+      0.9734,
+      0.9737,
+      0.9746,
+      0.9761,
+      0.9781,
+      0.9803,
+      0.9828,
+      0.9853,
+      0.9878,
+      0.9903,
+      0.9927,
+      0.9949,
+      0.9968,
+      0.9986,
+      1.0001,
+      1.0013,
+      1.0024,
+      1.0032,
+      1.0037,
+      1.0041,
+      1.0043,
+      1.0043,
+      1.0042,
+      1.0041,
+      1.0038,
+      1.0034,
+      1.0031,
+      1.0026,
+      1.0022,
+      1.0018,
+      1.0014,
+      1.001,
+      1.0007,
+      1.0004,
+      1.0001,
+      0.9999,
+      0.9997,
+      0.9996,
+      0.9994,
+      0.9994,
+      0.9993,
+      0.9993,
+      0.9993,
+      0.9993,
+      0.9994,
+      0.9994,
+      0.9995,
+      0.9995,
+      0.9996,
+      0.9997,
+      0.9997,
+      0.9998,
+      0.9999,
+      0.9999,
+      1,
+      1,
+      1,
+      1.0001,
+      1.0001,
+      1
+    )
+    forwards;
+  overflow: visible;
+}
+
+/* opcional: que la imagen no se coma todo el alto del slide */
+.swiper-slide img {
+  width: 90%;
+  height: auto; /* mejor que 100% para que deje espacio al texto */
+  object-fit: contain;
+  display: block;
+}
+
+.swiper-slide img:hover {
+  /* animation: scale-animation 1.76s linear(0, 0.0146, 0.0548, 0.1153, 0.1911, 0.2776, 0.3706, 0.4665, 0.562, 0.6545, 0.7419, 0.8225, 0.8951, 0.9589, 1.0137, 1.0591, 1.0956, 1.1235, 1.1434, 1.156, 1.1621, 1.1626, 1.1585, 1.1505, 1.1396, 1.1264, 1.1118, 1.0964, 1.0807, 1.0653, 1.0505, 1.0367, 1.0241, 1.0128, 1.003, 0.9946, 0.9878, 0.9824, 0.9784, 0.9757, 0.9741, 0.9734, 0.9737, 0.9746, 0.9761, 0.9781, 0.9803, 0.9828, 0.9853, 0.9878, 0.9903, 0.9927, 0.9949, 0.9968, 0.9986, 1.0001, 1.0013, 1.0024, 1.0032, 1.0037, 1.0041, 1.0043, 1.0043, 1.0042, 1.0041, 1.0038, 1.0034, 1.0031, 1.0026, 1.0022, 1.0018, 1.0014, 1.001, 1.0007, 1.0004, 1.0001, 0.9999, 0.9997, 0.9996, 0.9994, 0.9994, 0.9993, 0.9993, 0.9993, 0.9993, 0.9994, 0.9994, 0.9995, 0.9995, 0.9996, 0.9997, 0.9997, 0.9998, 0.9999, 0.9999, 1, 1, 1, 1.0001, 1.0001, 1) forwards; */
+}
+#swiper-1-sub {
+  width: 40vw;
+  font-size: 20px;
+  font-family: "codec-pro";
+  padding-left: 9.5vw;
+  line-height: 23px;
+}
+#swiper-2-sub {
+  width: 40vw;
+  font-size: 20px;
+  font-family: "codec-pro";
+  padding-left: 9vw;
+  line-height: 23px;
+}
+#swiper-3-sub {
+  width: 40vw;
+  font-size: 20px;
+  font-family: "codec-pro";
+  padding-left: 8vw;
+  line-height: 23px;
+}
+#swiper-4-sub {
+  width: 40vw;
+  font-size: 20px;
+  font-family: "codec-pro";
+  padding-left: 7.5vw;
+  line-height: 23px;
+}
+
+#swiper-5-sub {
+  width: 40vw;
+  font-size: 20px;
+  font-family: "codec-pro";
+  padding-left: 7.5vw;
+  line-height: 23px;
+}
+
+.modal{
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, 0.15);
+  transition: all .4s;
+  z-index: 5;
+  margin-top: 10vh;
+}
+
+.modal-content{
+  padding: 20px;
+  position: relative;
+  width: 50vw;
+  height: 80vh;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0 , 0.15) ;
+
+  overflow-y: auto;
+}
+
+.modal-content h2{
+  margin-top: 20px;
+  font-family: "codec-pro";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-img p{
+    font-family: "codec-pro";
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.title-persona{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 22px 10px;
+}
+#imagenes{
+  margin-top: 2vh;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 1fr;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+#foto1{
+    grid-column: 1/2;
+  /* grid-row: 4/5; */
+}
+
+#foto2{
+  grid-column: 2/3;
+  /* grid-row: 1/2; */
+}
+.modal-content img{
+  width: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.close-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: rgba(0 0 0 0 / .15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn a{
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.close-btn a:hover{
+  color: orangered;
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+}
+
+#mision {
+  background-image: url(/assets/mision\ fondo.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+#mision-container {
+  padding-left: 16vw;
+  padding-top: 20vh;
+}
+
+#mision-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 30vw;
+}
+
+#mision-text {
+  font-size: 20px;
+  font-family: "codec-pro";
+  line-height: 23px;
+  width: 70vw;
+}
