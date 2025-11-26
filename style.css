@@ -733,8 +733,7 @@ body {
     display: none;
   }
 
-  .texto_header_1 {
-...  }
+  
 
   .texto_header_2 {
     font-size: clamp(40px, 10vw, 56px);
@@ -791,27 +790,47 @@ body {
 
   #bakgroud-img-quien {
     width: 100%;
+    height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    row-gap: 30%;
     margin-top: 2vh;
   }
 
   #quien-img {
     width: 70%;
     padding: 0;
+    margin-top: 5%;
   }
 
   /* PEOPLE / SWIPER */
   #people {
     height: auto;
-    padding: 8vh 0;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+  }
+
+  #people-title{
+      font-family: "codec-pro";
   }
 
   .swiper {
     width: 90%;
-    margin-top: 4vh;
+    margin: 16px auto 0 auto;
   }
+
+#card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
   .swiper-button-prev img,
   .swiper-button-next img {
@@ -829,8 +848,8 @@ body {
   #swiper-5-sub {
     width: 100%;
     text-align: center;
-    padding-left: 0;
     font-size: 16px;
+    padding-left: 0;
   }
 
   /* MODAL en móvil */
