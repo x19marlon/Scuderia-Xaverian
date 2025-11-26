@@ -325,17 +325,23 @@ body {
 }
 
 #bakgroud-img-quien{
-  width: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  
 }
 
 #quien-contain-left {
-  margin-top: 34vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #quien-title {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-weight: bold;
-  margin-left: 20vw;
+  margin-left: 20%;
 }
 
 #quien-text {
@@ -349,7 +355,7 @@ body {
 
 #quien-img {
   padding-left: 8vw;
-  padding-top: 30vh;
+  padding-top: 5%;
 }
 
 #people {
@@ -357,29 +363,45 @@ body {
   background-color: #fff;
   background-size: cover;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+#people-title{
+        font-family: "codec-pro";
+
+}
 .swiper {
   margin-top: 10vh;
-  width: 80%;
+  width: 100%;
   height: auto;
+  
 }
 
 .swiper img {
   width: 100%;
   height: auto;
+  margin: 0;
 }
 
 .swiper-slide {
   display: flex;
-  flex-direction: column; /* ⭐ ahora es columna: img arriba, texto abajo */
-  align-items: center; /* centra horizontalmente */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-decoration: none;
   color: black;
 }
 
 .swiper-wrapper {
   overflow: visible !important;
+ 
+}
+
+#card{
+
 }
 
 .swiper-button-prev {
@@ -525,40 +547,48 @@ body {
   /* animation: scale-animation 1.76s linear(0, 0.0146, 0.0548, 0.1153, 0.1911, 0.2776, 0.3706, 0.4665, 0.562, 0.6545, 0.7419, 0.8225, 0.8951, 0.9589, 1.0137, 1.0591, 1.0956, 1.1235, 1.1434, 1.156, 1.1621, 1.1626, 1.1585, 1.1505, 1.1396, 1.1264, 1.1118, 1.0964, 1.0807, 1.0653, 1.0505, 1.0367, 1.0241, 1.0128, 1.003, 0.9946, 0.9878, 0.9824, 0.9784, 0.9757, 0.9741, 0.9734, 0.9737, 0.9746, 0.9761, 0.9781, 0.9803, 0.9828, 0.9853, 0.9878, 0.9903, 0.9927, 0.9949, 0.9968, 0.9986, 1.0001, 1.0013, 1.0024, 1.0032, 1.0037, 1.0041, 1.0043, 1.0043, 1.0042, 1.0041, 1.0038, 1.0034, 1.0031, 1.0026, 1.0022, 1.0018, 1.0014, 1.001, 1.0007, 1.0004, 1.0001, 0.9999, 0.9997, 0.9996, 0.9994, 0.9994, 0.9993, 0.9993, 0.9993, 0.9993, 0.9994, 0.9994, 0.9995, 0.9995, 0.9996, 0.9997, 0.9997, 0.9998, 0.9999, 0.9999, 1, 1, 1, 1.0001, 1.0001, 1) forwards; */
 }
 #swiper-1-sub {
-  width: 40vw;
+  width: auto;
   font-size: 20px;
   font-family: "codec-pro";
-  padding-left: 9.5vw;
-  line-height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #swiper-2-sub {
-  width: 40vw;
+  width: auto;
   font-size: 20px;
   font-family: "codec-pro";
-  padding-left: 9vw;
-  line-height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #swiper-3-sub {
-  width: 40vw;
+  width: auto;
   font-size: 20px;
   font-family: "codec-pro";
-  padding-left: 8vw;
-  line-height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 #swiper-4-sub {
-  width: 40vw;
+  width: auto;
   font-size: 20px;
   font-family: "codec-pro";
-  padding-left: 7.5vw;
-  line-height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 #swiper-5-sub {
-  width: 40vw;
+  width: auto;
   font-size: 20px;
   font-family: "codec-pro";
-  padding-left: 7.5vw;
-  line-height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .modal{
