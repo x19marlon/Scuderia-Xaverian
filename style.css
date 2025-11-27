@@ -374,7 +374,7 @@ body {
 
 }
 .swiper {
-  margin-top: 10vh;
+  margin-top: 2%;
   width: 100%;
   height: auto;
   
@@ -401,7 +401,10 @@ body {
 }
 
 #card{
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-button-prev {
@@ -578,7 +581,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 }
 
 #swiper-5-sub {
@@ -648,10 +651,16 @@ body {
   gap: 30px;
   align-items: center;
   justify-content: center;
+ 
 }
 #foto1{
     grid-column: 1/2;
   /* grid-row: 4/5; */
+}
+
+.link-card{
+   color: black;
+  text-decoration: none;
 }
 
 #foto2{
@@ -696,19 +705,23 @@ body {
 #mision {
   background-image: url(/assets/mision\ fondo.png);
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 #mision-container {
-  padding-left: 16vw;
-  padding-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #mision-title {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-weight: bold;
-  padding-left: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #mision-text {
@@ -716,6 +729,8 @@ body {
   font-family: "codec-pro";
   line-height: 23px;
   width: 70vw;
+  text-align: center;
+
 }
 
 
@@ -847,8 +862,12 @@ body {
   }
 
   #people-title{
-      font-family: "codec-pro";
-  }
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+justify-content: center;
+align-items: center;  }
 
   .swiper {
     width: 90%;

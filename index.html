@@ -24,7 +24,6 @@
         <a href="" id="title">MISION</a>
         <a href="" id="title">PATROCINIOS</a>
         <a href="" id="title">NOTICIAS</a>
-        
       </div>
       <div id="tipografia">
         <div id="linea1"></div>
@@ -36,7 +35,9 @@
         <p id="escuderia" class="texto_header_2">ESCUDERIA</p>
         <div id="linea2"></div>
       </div>
-      <div id="img-tipografia"><img src="/assets/SE CONVIERTE EN.png" alt="" width="100%"></div>
+      <div id="img-tipografia">
+        <img src="/assets/SE CONVIERTE EN.png" alt="" width="100%" />
+      </div>
     </section>
     <section id="quien">
       <div id="quien-contain-left">
@@ -51,23 +52,20 @@
         </p>
       </div>
       <div id="bakgroud-img-quien">
-        <img
-          id="quien-img"
-          src="/assets/foto-quienes-dia.jpg"
-          alt="">
-      
-      <img id="quien-img" src="/assets/foto-quienes-noche.jpg" alt="">
+        <img id="quien-img" src="/assets/foto-quienes-dia.jpg" alt="" />
+
+        <img id="quien-img" src="/assets/foto-quienes-noche.jpg" alt="" />
       </div>
     </section>
     <section id="people">
-      <h2 id="people-title">Equipos</h2>
+      <h2 id="people-title">EQUIPOS</h2>
       <div class="swiper mySwiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <a href="#admin" class="swiper-slide"
             ><div id="card">
-              <img src="/assets/admin.png" alt=""/>
+              <img src="/assets/admin.png" alt="" />
               <p id="swiper-1-sub">ADMIN</p>
             </div></a
           >
@@ -117,13 +115,15 @@
           </div>
           <h2>Administración</h2>
           <div id="imagenes">
-            <div id="foto1" class="modal-img">
-              <img src="/assets/foto cata.jpg" alt="" />
-              <div class="title-persona">
-                <h2>Catalina Polo</h2>
-                <p>Ingeniera Mecánica</p>
-              </div>
-            </div>
+            <a href="#catalina-polo" class="link-card">
+              <div id="foto1" class="modal-img">
+                <img src="/assets/foto cata.jpg" alt="" />
+                <div class="title-persona">
+                  <h2>Catalina Polo</h2>
+                  <p>Ingeniera Mecánica</p>
+                </div>
+              </div></a
+            >
             <div id="foto2" class="modal-img">
               <img src="/assets/foto mapis.jpg" alt="" />
               <div class="title-persona">
@@ -176,11 +176,10 @@
                 <p>Ingeniera Mecátronica</p>
               </div>
             </div>
-            
-      
           </div>
         </div>
-      </div><div id="dinamicos" class="modal">
+      </div>
+      <div id="dinamicos" class="modal">
         <div class="modal-content">
           <div class="close-btn">
             <a class="modal_close" href="#!">&times;</a>
@@ -196,7 +195,8 @@
             </div>
           </div>
         </div>
-      </div><div id="powertrain" class="modal">
+      </div>
+      <div id="powertrain" class="modal">
         <div class="modal-content">
           <div class="close-btn">
             <a class="modal_close" href="#!">&times;</a>
@@ -240,7 +240,8 @@
             </div>
           </div>
         </div>
-      </div><div id="suspencion" class="modal">
+      </div>
+      <div id="suspencion" class="modal">
         <div class="modal-content">
           <div class="close-btn">
             <a class="modal_close" href="#!">&times;</a>
@@ -285,6 +286,23 @@
           </div>
         </div>
       </div>
+      <div id="catalina-polo" class="modal">
+        <div class="modal-content">
+          <div class="close-btn">
+            <a class="modal_close" href="#!">&times;</a>
+          </div>
+          <h2>Presidente/Powertrain</h2>
+          <div id="imagenes">
+            <div id="foto1" class="modal-img">
+              <img src="/assets/foto cata.jpg" alt="" />
+              <div class="title-persona">
+                <h2>Catalina Polo</h2>
+                <p>Ingeniera Mecánica</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="mision">
       <div id="mision-container">
@@ -298,6 +316,16 @@
           formando ingenieros íntegros y creativos, capaces de transformar su
           conocimiento en soluciones reales
         </p>
+        <p id="mision-title">VISIÓN</p>
+
+        <p id="mision-text">
+          Ser un equipo de referencia en la competencia Fórmula SAE a nivel
+          nacional e internacional, destacándonos por la excelencia en el
+          diseño, la innovación y la implementación de soluciones tecnológicas.
+          Aspiramos a consolidarnos como un lugar de formación y desarrollo para
+          futuros profesionales, promoviendo la integración entre la academia y
+          la industria.
+        </p>
       </div>
     </section>
     <section id="sponsors"></section>
@@ -309,7 +337,6 @@
         // Optional parameters
         direction: "horizontal",
         loop: true,
-        
 
         // If we need pagination
 
@@ -324,14 +351,17 @@
           el: ".swiper-scrollbar",
         },
         breakpoints: {
-          0: {          // cel
+          0: {
+            // cel
             slidesPerView: 1,
-            allowTouchMove:true,
+            allowTouchMove: true,
           },
-          768: {        // tablet
+          768: {
+            // tablet
             slidesPerView: 2,
           },
-          1024: {       // pc
+          1024: {
+            // pc
             slidesPerView: 3,
           },
         },
