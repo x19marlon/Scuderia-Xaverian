@@ -628,7 +628,7 @@ body {
 .modal-content {
   padding: 20px;
   position: relative;
-  width: 50vw;
+  width: 10vw;
   height: 80vh;
   background: #fff;
   border-radius: 10px;
@@ -778,6 +778,8 @@ body {
   grid-column: 2/3;
   /* grid-row: 1/2; */
 }
+
+
 .modal-content img {
   width: 200px;
   object-fit: contain;
@@ -901,6 +903,42 @@ body {
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(190, 190, 190),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 } */
+.personal-main-contain{
+  display: flex;
+  flex-direction: row;
+  margin: 5% 0;
+}
+
+.personal-bio{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'codec pro';
+}
+
+.personal-bio p{
+  color: royalblue;
+}
+
+.user-card_personal {
+  height: 350px;
+  border: 12px solid #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background: #000; /* fallback */
+  font-family: "codec-pro";
+  display: flex;
+  justify-content: right;
+  font-size: 10px;
+  width: 40%;
+}
+
+.user-card__avatar_personal{
+
+}
 
 @media (max-width: 768px) {
   /* HEADER */
