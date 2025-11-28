@@ -702,7 +702,7 @@ body {
   width: 200px;
   height: 350px;
   border: 12px solid #fff;
-  border-radius: 20px;
+  border-radius: 0px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -959,6 +959,11 @@ body {
 
 .des{
   text-align: center;
+}
+
+.links{
+  display: flex;
+  gap: 5px;
 }
 
 .links img{
