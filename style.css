@@ -706,12 +706,15 @@ body {
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   position: relative;
-  background: #d9dce1; /* fallback */
+  background: #D9DCE1; /* fallback */
   font-family: "codec-pro";
   display: flex;
   justify-content: center;
   font-size: 10px;
 }
+
+
+
 
 .user-card::after {
   content: "";
@@ -736,7 +739,7 @@ body {
     black 75%
   );
 }
-.user-card__header {
+.user-card__header{
   height: 40px;
 }
 .user-card__body {
@@ -769,6 +772,7 @@ body {
 .user-card__description {
   font-size: 0.8rem;
   letter-spacing: 1px;
+
 }
 
 .user-card__description_np {
@@ -791,6 +795,7 @@ body {
   grid-column: 2/3;
   /* grid-row: 1/2; */
 }
+
 
 .modal-content img {
   width: 200px;
@@ -915,7 +920,7 @@ body {
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(190, 190, 190),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 } */
-.personal-main-contain {
+.personal-main-contain{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -923,44 +928,45 @@ body {
   margin: 5% 0;
   gap: 2%;
   font-family: "Montserrat", sans-serif;
+
 }
 
-.personal-bio {
+.personal-bio{
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "codec pro";
+  font-family: 'codec pro';
 }
 
-.personal-bio_des p {
+.personal-bio_des p{
   color: royalblue;
 }
 
-.personal-bio_des {
+.personal-bio_des{
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-.personal-bio_des img {
-  width: 20px;
+.personal-bio_des img{
+  width: 10px;
 }
 
-.personal-bio_des_text {
+.personal-bio_des_text{
   margin-left: 5px;
 }
 
-.des {
+.des{
   text-align: center;
 }
 
-.links {
+.links{
   display: flex;
-  gap: 5px;
+  gap: ;
 }
 
-.links img {
+.links img{
   width: 20px;
 }
 
@@ -1133,6 +1139,8 @@ body {
     margin-top: 0;
   }
 
+  
+
   .modal-content {
     width: 90vw;
     height: 80vh;
@@ -1164,7 +1172,7 @@ body {
     line-height: 1.4;
     text-align: center;
   }
-}
+
 
 .personal-bio_des_text{
     font-family: 'codec pro';
@@ -1172,6 +1180,7 @@ body {
 }
 .des{
   font-family: 'codec pro';
+}
 }
 
 /* 💻 Laptop — 1024px */
