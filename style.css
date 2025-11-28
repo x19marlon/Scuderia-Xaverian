@@ -963,7 +963,6 @@ body {
 
 .links{
   display: flex;
-  gap: ;
 }
 
 .links img{
@@ -1075,6 +1074,9 @@ body {
     row-gap: 30%;
     margin-top: 2vh;
   }
+  .swiper-slide:hover {
+  ...
+  }
 
   #quien-img {
     width: 70%;
@@ -1183,6 +1185,23 @@ body {
 }
 }
 
+.footer{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  font-family: "codec pro", sans-serif;
+  justify-content: right;
+  align-items: end;
+  margin-right: 2%;
+  text-align: end;
+  font-size: 24px;
+  line-height: 0.4;
+}
+
+.correo{
+  color: royalblue;
+  text-decoration: underline;
+}
 /* 💻 Laptop — 1024px */
 @media (min-width: 1024px) {
   /* Hero */
