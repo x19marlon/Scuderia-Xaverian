@@ -1,1179 +1,492 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
-    <title>Scuderia Xaverian</title>
-  </head>
-  <body>
-    <section id="hero">
-      <div id="header">
-        <a href="#hero"
-          ><img
-            src="/assets/xaverian logo.png"
-            alt="escudo del equipo"
-            width="100px"
-        /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Escudería Xaverian — Semillero de investigación Formula SAE de la Pontificia Universidad Javeriana. Diseño, innovación y pasión por la ingeniería automotriz." />
+  <meta property="og:title" content="Escudería Xaverian | Formula SAE" />
+  <meta property="og:description" content="Semillero de investigación enfocado en el desarrollo automotor y el aprendizaje práctico en ingeniería." />
+  <meta property="og:image" content="assets/xaverian logo.png" />
+  <link rel="icon" type="image/png" href="assets/xaverian logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Escudería Xaverian | Formula SAE</title>
+</head>
+<body>
 
-        <a href="#quien" id="title">NOSOTROS</a>
-        <a href="#people" id="title">EQUIPOS</a>
-        <a href="#mision" id="title">MISION</a>
-        <a href="#patrocinios" id="title">PATROCINADORES</a>
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav">
+      <a href="#hero" class="nav__logo">
+        <img src="assets/xaverian logo.png" alt="Escudería Xaverian" />
+      </a>
+      <div class="nav__links" id="nav-links">
+        <a href="#about" class="nav__link">Nosotros</a>
+        <a href="#mission" class="nav__link">Misión</a>
+        <a href="#areas" class="nav__link">Áreas</a>
+        <a href="#team" class="nav__link">Equipo</a>
+        <a href="#sponsors" class="nav__link">Patrocinadores</a>
       </div>
-      <div id="tipografia">
-        <div id="tipografia-1">
-          <div id="linea1"></div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
 
-          <p id="cuando" class="texto_header_1">CUANDO LA</p>
-        </div>
-        <div id="tipografia-2">
-          <p id="inge" class="texto_header_2">INGENIERIA</p>
-          <p id="convierte" class="texto_header_1">SE CONVIERTE</p>
-        </div>
-        <div id="tipografia-3">
-          <p id="en" class="texto_header_1">EN</p>
-          <p id="arte" class="texto_header_2">ARTE</p>
-          <div id="tipografia-3-nace">
-            <p id="nace" class="texto_header_1">NACE UNA</p>
-          </div>
-        </div>
-        <div id="tipografia-4">
-          <p id="escuderia" class="texto_header_2">ESCUDERIA</p>
-        </div>
-        <div id="linea2"></div>
+  <main>
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section id="hero" class="hero">
+      <div class="hero__content">
+        <div class="hero__line"></div>
+        <p class="hero__pre">CUANDO LA INGENIERÍA</p>
+        <h1 class="hero__title">SE CONVIERTE EN <span class="accent">ARTE</span></h1>
+        <p class="hero__pre">NACE UNA</p>
+        <h1 class="hero__title hero__title--xl">ESCUDERÍA</h1>
+        <div class="hero__line"></div>
+        <a href="#about" class="btn btn--primary">CONÓCENOS</a>
       </div>
-      <div id="img-tipografia">
-        <img src="/assets/SE CONVIERTE EN.png" alt="" width="100%" />
+      <div class="hero__scroll">
+        <span></span>
       </div>
     </section>
-    <section id="quien">
-      <div id="quien-contain-left">
-        <p id="quien-title">¿QUIENES SOMOS?</p>
-        <p id="quien-text">
-          Somos un semillero de investigación de la Pontificia Universidad
-          Javeriana enfocado en el desarrollo automotor y el aprendizaje
-          práctico en ingeniería. Reunimos estudiantes de distintas disciplinas
-          para diseñar y optimizar un monoplaza, con el objetivo de participar
-          en la competencia Fórmula SAE Brasil y conectar la formación académica
-          con la experiencia real de la industria.
-        </p>
-      </div>
-      <div id="bakgroud-img-quien">
-        <img id="quien-img" src="/assets/foto-quienes-dia.jpg" alt="" />
 
-        <img id="quien-img" src="/assets/foto-quienes-noche.jpg" alt="" />
-      </div>
-    </section>
-    <section id="people">
-      <h2 id="people-title">EQUIPOS</h2>
-      <div class="swiper mySwiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <a href="#admin" class="swiper-slide"
-            ><div id="card">
-              <img src="/assets/admin.png" alt="" />
-              <p id="swiper-1-sub">ADMINISTRACIÓN</p>
-            </div></a
-          >
-          <a href="#chasis" class="swiper-slide"
-            ><div id="card">
-              <img src="/assets/chasis.png" alt="" />
-              <p id="swiper-2-sub">CHASIS</p>
-            </div></a
-          >
-          <a href="#dinamicos" class="swiper-slide"
-            ><div id="card">
-              <img src="/assets/dinamicos.png" alt="" />
-              <p id="swiper-3-sub">DINÁMICOS</p>
-            </div></a
-          >
-          <a href="#powertrain" class="swiper-slide"
-            ><div id="card">
-              <img src="/assets/motor.png" alt="" />
-              <p id="swiper-4-sub">POWERTRAIN</p>
-            </div></a
-          >
-          <a href="#suspencion" class="swiper-slide"
-            ><div id="card">
-              <img src="/assets/suspension1.png" alt="" />
-              <p id="swiper-5-sub">SUSPENSIÓN</p>
-            </div></a
-          >
-        </div>
-        <!-- If we need pagination -->
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev">
-          <img src="/assets/prev.png" alt="" />
-        </div>
-        <div class="swiper-button-next">
-          <img src="/assets/next.png" alt="" />
-        </div>
-      </div>
-
-      <!-- menu de tarjetas -->
-      <!-- admin -->
-      <div id="admin" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>ADMINISTRACIÓN</h2>
-          <div id="imagenes">
-            <a href="#catalina-polo" class="link-card">
-              <div class="user-card">
-                <img
-                  src="/assets/foto cata.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Catalina Polo</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniera Mecánica</p>
-                </div>
-              </div>
-            </a>
-            <!-- mapis -->
-            <a href="#mapis">
-              <div class="user-card">
-                <img
-                  src="/assets/foto mapis.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Maria Paz</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniera Mecánica</p>
-                </div>
-              </div></a
-            >
-            <!-- el profe -->
-            <a href="">
-              <div class="user-card-no-ph">
-                <img
-                  src="/assets/no-ph.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                  height="320px"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name_np">Jorge Macias</h2>
-                  </div>
-                  <p class="user-card__description_np">Profesor Instructor</p>
-                </div>
-              </div></a
-            >
-            <!-- nata -->
-            <a href="#nata">
-              <div class="user-card-no-ph">
-                <img
-                  src="/assets/no-ph.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                  height="320px"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name_np">Natalia C.</h2>
-                  </div>
-                  <p class="user-card__description_np">Ingenieria Industrial</p>
-                </div>
-              </div></a
-            >
-            <!-- marlon guapo -->
-            <a href="#marlon">
-              <div class="user-card">
-                <img
-                  src="/assets/foto marlon.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Marlon Restrepo</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniero De Sistemas</p>
-                </div>
-              </div></a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- chasis -->
-      <div id="chasis" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>CHASIS</h2>
-          <div id="imagenes">
-            <!-- juan rubio -->
-            <a href="#rubio">
-              <div class="user-card">
-                <img
-                  src="/assets/juan rubio.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Juan Rubio</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniero Mecatrónico</p>
-                </div>
-              </div></a
-            >
-            <!-- nicolas  -->
-            <a href="#nicolas">
-              <div class="user-card">
-                <img
-                  src="/assets/nicolas vera.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Nicolas Vera</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniero Mecatrónico</p>
-                </div>
-              </div></a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- dinamicos -->
-      <div id="dinamicos" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>DINÁMICOS</h2>
-          <div id="imagenes">
-            <!-- sophia -->
-            <a href="#sophia">
-              <div class="user-card">
-                <img
-                  src="/assets/sophia.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Sophía Ovalle</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniera Mecatrónica</p>
-                </div>
-              </div></a
-            >
-            <!-- cepeda -->
-            <a href="#cepeda">
-              <div class="user-card-no-ph">
-                <img
-                  src="/assets/no-ph.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                  height="320px"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name_np">Juan Cepeda</h2>
-                  </div>
-                  <p class="user-card__description_np">Ingenierio Industrial</p>
-                </div>
-              </div></a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- powertrain -->
-      <div id="powertrain" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>POWERTRAIN</h2>
-          <div id="imagenes">
-            <!-- cata 2 -->
-            <a href="#catalina-polo">
-              <div class="user-card">
-                <img
-                  src="/assets/foto cata.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Catalina Polo</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniera Mecánica</p>
-                </div>
-              </div></a
-            >
-            <!-- mapiz 2 -->
-            <a href="#mapis">
-              <div class="user-card">
-                <img
-                  src="/assets/foto mapis.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Maria Paz</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniera Mecatrónica</p>
-                </div>
-              </div></a
-            >
-            <!-- el gayrgio -->
-            <a href="#sergio">
-              <div class="user-card">
-                <img
-                  src="/assets/sergio.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Sergio Costa</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniero Mecatrónico</p>
-                </div>
-              </div></a
-            >
-            <!-- sofia -->
-            <a href="#sofia">
-              <div class="user-card">
-                <img src="/assets/sofia.jpg" alt="" class="user-card__avatar" />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Sofia Duran</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniera Electrónica</p>
-                </div>
-              </div></a
-            >
-            <!-- ruiz -->
-            <a href="#ruiz">
-              <div class="user-card">
-                <img
-                  src="/assets/sofia ruiz.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Nicolle Ruiz</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniera Mecatrónica</p>
-                </div>
-              </div></a
-            >
-            <!-- henry -->
-            <a href="#henry">
-              <div class="user-card">
-                <img src="/assets/henry.jpg" alt="" class="user-card__avatar" />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Henry Apaza</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniero Industrial</p>
-                </div>
-              </div></a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- suspension -->
-      <div id="suspencion" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>SUSPENCIÓN</h2>
-          <div id="imagenes">
-            <!-- juanjo -->
-            <a href="#juanjo">
-              <div class="user-card">
-                <img
-                  src="/assets/juanjo.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Juan Urrea</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniero Mecánico</p>
-                </div>
-              </div></a
-            >
-            <!-- lopez -->
-            <a href="#lopez">
-              <div class="user-card">
-                <img
-                  src="/assets/juan lopez.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Juan Lopez</h2>
-                  </div>
-                  <p class="user-card__description">Ingenierio Mecánico</p>
-                </div>
-              </div></a
-            >
-            <!-- julian -->
-            <a href="#julian">
-              <div class="user-card">
-                <img
-                  src="/assets/julian.jpg"
-                  alt=""
-                  class="user-card__avatar"
-                />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Julian Amaya</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniero Mecánico</p>
-                </div>
-              </div></a
-            >
-            <!-- karen -->
-            <a href="#karen">
-              <div class="user-card">
-                <img src="/assets/karen.jpg" alt="" class="user-card__avatar" />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Karen Jimenez</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniera Mecánica</p>
-                </div>
-              </div></a
-            >
-            <!-- fkin munir -->
-            <a href="#munir">
-              <div class="user-card">
-                <img src="/assets/munir.jpg" alt="" class="user-card__avatar" />
-
-                <div class="user-card__body">
-                  <div class="user-card__header">
-                    <h2 class="user-card__name">Munir Tawil</h2>
-                  </div>
-                  <p class="user-card__description">Ingeniera Mecánica</p>
-                </div>
-              </div></a
-            >
-          </div>
-        </div>
-      </div>
-
-      <!-- personales -->
-      <!-- cata -->
-      <div id="catalina-polo" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2> FUNDADORA / PRESIDENTE / POWERTRAIN</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img
-                src="/assets/foto cata.jpg"
-                alt=""
-                class="user-card__avatar"
-              />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Catalina Polo</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets/mecanica.png" alt="" />
-                  <p class="personal-bio_des_text">
-                    Ingenieria Mecánica y Cientifica De Datos
-                  </p>
-                </div>
-              </div>
-              <div class="links">
-                <a href="https://www.linkedin.com/in/catalina-polo-005bb4250/"
-                  ><img src="/assets/LinkedIn_icon.svg.png" alt=""
-                /></a>
-              </div>
-              <div>
-                <p class="des">
-                  Estudiante de Ingeniería Mecánica y Ciencia de Datos en la
-                  Pontificia Universidad Javeriana. Fundadora del Semillero de
-                  Investigación Escudería Xaveriana. Apasionada por la
-                  investigación aplicada, el diseño mecánico y el análisis de
-                  datos para resolver problemas reales.
-                </p>
-              </div>
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section id="about" class="section section--dark">
+      <div class="container">
+        <div class="about">
+          <div class="about__text reveal">
+            <h2 class="section__title">¿QUIÉNES <span class="accent">SOMOS?</span></h2>
+            <p class="about__desc">
+              Somos un semillero de investigación de la Pontificia Universidad
+              Javeriana enfocado en el desarrollo automotor y el aprendizaje
+              práctico en ingeniería. Reunimos estudiantes de distintas disciplinas
+              para diseñar y optimizar un monoplaza, con el objetivo de participar
+              en la competencia Fórmula SAE Brasil y conectar la formación académica
+              con la experiencia real de la industria.
+            </p>
+            <div class="about__badge">
+              <img src="assets/javeriana escudo.png" alt="Pontificia Universidad Javeriana" />
+              <span>Pontificia Universidad Javeriana</span>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- nata -->
-      <!-- no ph -->
-      <div id="nata" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>FINANZAS</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <div class="user-card-no-ph">
-                <img src="/assets/no-ph.jpg" alt="" class="user-card__avatar" />
-              </div>
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Natalia C.</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets/industrial.png" alt="" />
-                  <p class="personal-bio_des_text">Ingeniera Industrial</p>
-                </div>
-              </div>
-              <div class="links">
-                <a
-                  href="https://www.linkedin.com/in/natalia-c-a22412235?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                  ><img src="/assets/LinkedIn_icon.svg.png" alt=""
-                /></a>
-              </div>
-              <div>
-                <p class="des">
-                  Y entonces, se miró al espejo y decidió que la recordarían por
-                  loca, por rebelde, y por libre. que eso de sumisa y de estar
-                  siempre cuerdañ ya no le iba.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- mapis -->
-      <div id="mapis" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>COMMUNITY MANAGER / POWERTRAIN</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img
-                src="/assets/foto mapis.jpg"
-                alt=""
-                class="user-card__avatar"
-              />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Maria Paz</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets/mecatro.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenieria Mecatrónica</p>
-                </div>
-              </div>
-              <div class="links">
-                <a
-                  href="https://www.linkedin.com/in/maria-paz-jimenez-bustamante/"
-                  ><img src="/assets/LinkedIn_icon.svg.png" alt=""
-                /></a>
-              </div>
-              <div>
-                <p class="des"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- yo -->
-      <div id="marlon" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>WEB MASTER</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img
-                src="/assets/foto marlon.jpg"
-                alt=""
-                class="user-card__avatar"
-              />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Marlon Restrepo</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets/migao.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenierio De Sistemas</p>
-                </div>
-              </div>
-              <div class="links">
-                <a href="https://www.linkedin.com/in/marlon-restrepo-078261268/"
-                  ><img src="/assets/LinkedIn_icon.svg.png" alt=""
-                /></a>
-              </div>
-              <div>
-                <p class="des">
-                  Estudio ingeniería de sistemas, apasianado por el aprendizaje.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- chasis -->
-      <!-- juan rubio -->
-      <!-- gmail -->
-      <div id="rubio" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>CHASIS</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img
-                src="/assets/juan rubio.jpg"
-                alt=""
-                class="user-card__avatar"
-              />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Juan Rubio</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets/mecatro.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenierio Mecatrónico</p>
-                </div>
-              </div>
-              <div class="links">
-                <img src="/assets/gmail.png" alt="" />
-                <p>jsrubio08@gmail.com</p>
-              </div>
-              <div>
-                <p class="des"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- nicolas -->
-      <div id="nicolas" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>CHASIS</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img
-                src="/assets/nicolas vera.jpg"
-                alt=""
-                class="user-card__avatar"
-              />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Nicolas Vera</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets//mecatro.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenierio Mecatrónico</p>
-                </div>
-              </div>
-              <div class="links">
-                <a href="https://www.linkedin.com/in/nicolas-vera-8ba80b392/"
-                  ><img src="/assets/LinkedIn_icon.svg.png" alt=""
-                /></a>
-              </div>
-              <div>
-                <p class="des"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- dinamicos -->
-      <!-- sophia -->
-      <div id="sophia" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>DINÁMICOS</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img src="/assets/sophia.jpg" alt="" class="user-card__avatar" />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Sophía Ovalle</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets//mecatro.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenieria Mecatrónica</p>
-                </div>
-              </div>
-              <div class="links">
-                <a
-                  href="https://www.linkedin.com/in/l-sophía-ovalle-sánchez-821148242/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                  ><img src="/assets/LinkedIn_icon.svg.png" alt=""
-                /></a>
-              </div>
-              <div>
-                <p class="des"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- cepeda -->
-      <div id="cepeda" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>DINÁMICOS</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <div class="user-card-no-ph">
-                <img src="/assets/no-ph.jpg" alt="" class="user-card__avatar" />
-              </div>
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Juan Cepeda</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets/industrial.png" alt="" />
-                  <p class="personal-bio_des_text">Ingeniero Industrial</p>
-                </div>
-              </div>
-              <div class="links">
-                <a href="https://www.linkedin.com/in/juandcepedad/"
-                  ><img src="/assets/LinkedIn_icon.svg.png" alt=""
-                /></a>
-              </div>
-              <div>
-                <p class="des"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- POWERTRAIN -->
-      <!-- sergio outlook-->
-      <div id="sergio" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>POWERTRAIN</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img src="/assets/sergio.jpg" alt="" class="user-card__avatar" />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Sergio Costa</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets//mecatro.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenierio Mecatrónica</p>
-                </div>
-              </div>
-              <div class="links">
-                <img src="/assets/outlook.png" alt="" />
-                <p>sergioa.costa@outlook.com</p>
-              </div>
-              <div>
-                <p class="des"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- sofia gmail -->
-      <div id="sofia" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>POWERTRAIN</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img src="/assets/sofia.jpg" alt="" class="user-card__avatar" />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Sofia Duran</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets/electronica.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenierio Electrónica</p>
-                </div>
-              </div>
-              <div class="links">
-                <img src="/assets/gmail.png" alt="" />
-                <p>sdurang21@gmail.com</p>
-              </div>
-              <div>
-                <p class="des"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- nicolle gmail -->
-      <div id="ruiz" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>POWERTRAIN</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img
-                src="/assets/sofia ruiz.jpg"
-                alt=""
-                class="user-card__avatar"
-              />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Nicolle Ruiz</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets/mecatro.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenieria Mecatrónica</p>
-                </div>
-              </div>
-              <div class="links">
-                <img src="/assets/gmail.png" alt="" />
-                <p>ruizgantiva.nicollestefany@gmail.com</p>
-              </div>
-              <div>
-                <p class="des"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- henry gmail -->
-      <div id="henry" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>POWERTRAIN</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img src="/assets/henry.jpg" alt="" class="user-card__avatar" />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Henry Apaza</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets/industrial.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenierio Industrial</p>
-                </div>
-              </div>
-              <div class="links">
-                <img src="/assets/gmail.png" alt="" />
-                <p>henryapaza3324@gmail.com</p>
-              </div>
-              <div>
-                <p class="des">
-                  Soy estudiante de Ingeniería Industrial y miembro del
-                  Semillero Fórmula SAE de la Pontificia Universidad Javeriana.
-                  Mi rol se enfoca en la gestión de procesos, análisis de datos
-                  y optimización operativa para apoyar el desarrollo del
-                  monoplaza. Aportar una visión estratégica orientada a la
-                  eficiencia, la planificación de recursos y la coordinación de
-                  actividades, integrando principios de mejora continua y
-                  gestión de proyectos al entorno automotriz. Mi objetivo es
-                  contribuir a que el equipo avance con mayor precisión, orden y
-                  resultados medibles, bajo el espíritu Xaverian de
-                  excelencia e innovación.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- suspencion -->
-      <!-- juanjo nada -->
-      <div id="juanjo" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>SUSPENCIÓN</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img src="/assets/juanjo.jpg" alt="" class="user-card__avatar" />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Juan Urrea</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets/mecanica.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenierio Mecánico</p>
-                </div>
-              </div>
-              <div class="links"></div>
-              <div>
-                <p class="des"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- juan lopez  outlook-->
-      <div id="lopez" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>SUSPENCIÓN</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img
-                src="/assets/juan lopez.jpg"
-                alt=""
-                class="user-card__avatar"
-              />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Juan Lopez</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets//mecanica.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenierio Mecánico</p>
-                </div>
-              </div>
-              <div class="links">
-                <img src="/assets/outlook.png" alt="" />
-                <p>juanj.lopez@javeriana.edu.co</p>
-              </div>
-              <div>
-                <p class="des"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- julian -->
-      <!-- linkedin -->
-      <div id="julian" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>SUSPENCIÓN</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img src="/assets//julian.jpg" alt="" class="user-card__avatar" />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Julian Amaya</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets/mecanica.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenierio Mecánico</p>
-                </div>
-              </div>
-              <div class="links">
-                <a
-                  href="http://www.linkedin.com/in/julián-ferney-amaya-moreno-3700321ab"
-                  ><img src="/assets/LinkedIn_icon.svg.png" alt=""
-                /></a>
-              </div>
-              <div>
-                <p class="des"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- karen -->
-      <div id="karen" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>SUSPENCIÓN</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img src="/assets/karen.jpg" alt="" class="user-card__avatar" />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Karen Jimenez</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets/mecanica.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenieria Mecánica</p>
-                </div>
-              </div>
-              <div class="links">
-                <a
-                  href="https://www.linkedin.com/in/karen-michell-jimenez-9728b32a0/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                  ><img src="/assets/LinkedIn_icon.svg.png" alt=""
-                /></a>
-              </div>
-              <div>
-                <p class="des"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- munir -->
-       <div id="munir" class="modal">
-        <div class="modal-content">
-          <div class="close-btn">
-            <a class="modal_close" href="#!">&times;</a>
-          </div>
-          <h2>SUSPENCIÓN</h2>
-          <div class="personal-main-contain">
-            <div class="user-card">
-              <img
-                src="/assets/juan rubio.jpg"
-                alt=""
-                class="user-card__avatar"
-              />
-            </div>
-            <div class="personal-bio">
-              <div>
-                <h2>Munir Tawill</h2>
-                <div class="personal-bio_des">
-                  <img src="/assets/mecanica.png" alt="" />
-                  <p class="personal-bio_des_text">Ingenierio Mecánico</p>
-                </div>
-              </div>
-              <div class="links">
-                <img src="/assets/gmail.png" alt="" />
-                <p>tawilmunir66@gmail.com</p>
-              </div>
-              <div>
-                <p class="des"></p>
-              </div>
-            </div>
+          <div class="about__images reveal">
+            <img src="assets/foto-quienes-dia.jpg" alt="Equipo Escudería Xaverian de día" class="about__img about__img--main" />
+            <img src="assets/foto-quienes-noche.jpg" alt="Equipo en pista de noche" class="about__img about__img--secondary" />
           </div>
         </div>
       </div>
     </section>
-    <section id="mision">
-      <div id="mision-container">
-        <p id="mision-title">MISIÓN</p>
-        <p id="mision-text">
-          Fomentar el crecimiento profesional y personal de nuestros integrantes
-          mediante el aprendizaje aplicado, la investigación y la innovación
-          tecnológica en el ámbito automotriz. Buscamos que cada estudiante
-          desarrolle habilidades técnicas, de liderazgo y trabajo en equipo a
-          través del diseño y fabricación de un monoplaza de competencia,
-          formando ingenieros íntegros y creativos, capaces de transformar su
-          conocimiento en soluciones reales
-        </p>
-        <p id="mision-title">VISIÓN</p>
 
-        <p id="mision-text">
-          Ser un equipo de referencia en la competencia Fórmula SAE a nivel
-          nacional e internacional, destacándonos por la excelencia en el
-          diseño, la innovación y la implementación de soluciones tecnológicas.
-          Aspiramos a consolidarnos como un lugar de formación y desarrollo para
-          futuros profesionales, promoviendo la integración entre la academia y
-          la industria.
-        </p>
+    <!-- ═══════════════ MISSION ═══════════════ -->
+    <section id="mission" class="section mission">
+      <div class="container">
+        <h2 class="section__title section__title--center reveal">NUESTRO <span class="accent">PROPÓSITO</span></h2>
+        <div class="mission__cards">
+          <article class="glass-card reveal">
+            <div class="glass-card__accent"></div>
+            <h3 class="glass-card__title">MISIÓN</h3>
+            <p class="glass-card__text">
+              Fomentar el crecimiento profesional y personal de nuestros integrantes
+              mediante el aprendizaje aplicado, la investigación y la innovación
+              tecnológica en el ámbito automotriz. Buscamos que cada estudiante
+              desarrolle habilidades técnicas, de liderazgo y trabajo en equipo a
+              través del diseño y fabricación de un monoplaza de competencia,
+              formando ingenieros íntegros y creativos, capaces de transformar su
+              conocimiento en soluciones reales.
+            </p>
+          </article>
+          <article class="glass-card reveal">
+            <div class="glass-card__accent"></div>
+            <h3 class="glass-card__title">VISIÓN</h3>
+            <p class="glass-card__text">
+              Ser un equipo de referencia en la competencia Fórmula SAE a nivel
+              nacional e internacional, destacándonos por la excelencia en el
+              diseño, la innovación y la implementación de soluciones tecnológicas.
+              Aspiramos a consolidarnos como un lugar de formación y desarrollo para
+              futuros profesionales, promoviendo la integración entre la academia y
+              la industria.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
-    <section id="patrocinios">
-      <div id="container-patrocinios">
-        <p id="patrocinios-title">PATROCINIOS</p>
-        <div id="sponsors">
-          <div class="card shadow">
-            <img
-              id="patrocios-img"
-              src="/assets/SolidWorks-Logo.png"
-              alt=""
-              width="70%"
-            /><img
-              id="patrocios-img"
-              src="/assets/ANSYS_logo.png"
-              alt=""
-              width="70%"
-            />
+
+    <!-- ═══════════════ AREAS ═══════════════ -->
+    <section id="areas" class="section section--dark">
+      <div class="container">
+        <h2 class="section__title section__title--center reveal">ÁREAS DE <span class="accent">TRABAJO</span></h2>
+        <div class="areas__grid">
+          <article class="area-card reveal">
+            <div class="area-card__img"><img src="assets/admin.png" alt="Administración" /></div>
+            <h3 class="area-card__title">ADMINISTRACIÓN</h3>
+            <p class="area-card__desc">Gestión de recursos, finanzas, relaciones institucionales y comunicación del equipo.</p>
+          </article>
+          <article class="area-card reveal">
+            <div class="area-card__img"><img src="assets/chasis.png" alt="Chasis" /></div>
+            <h3 class="area-card__title">CHASIS</h3>
+            <p class="area-card__desc">Diseño y fabricación de la estructura principal del monoplaza.</p>
+          </article>
+          <article class="area-card reveal">
+            <div class="area-card__img"><img src="assets/dinamicos.png" alt="Dinámicos" /></div>
+            <h3 class="area-card__title">DINÁMICOS</h3>
+            <p class="area-card__desc">Análisis dinámico del vehículo, simulación y optimización del rendimiento.</p>
+          </article>
+          <article class="area-card reveal">
+            <div class="area-card__img"><img src="assets/motor.png" alt="Powertrain" /></div>
+            <h3 class="area-card__title">POWERTRAIN</h3>
+            <p class="area-card__desc">Motor, transmisión y todos los sistemas de propulsión del monoplaza.</p>
+          </article>
+          <article class="area-card reveal">
+            <div class="area-card__img"><img src="assets/suspension1.png" alt="Suspensión" /></div>
+            <h3 class="area-card__title">SUSPENSIÓN</h3>
+            <p class="area-card__desc">Diseño y optimización del sistema de suspensión para máximo rendimiento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ TEAM ═══════════════ -->
+    <section id="team" class="section">
+      <div class="container">
+        <h2 class="section__title section__title--center reveal">NUESTRO <span class="accent">EQUIPO</span></h2>
+
+        <!-- Filter tabs -->
+        <div class="team__filters reveal" id="team-filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="admin">Administración</button>
+          <button class="filter-btn" data-filter="chasis">Chasis</button>
+          <button class="filter-btn" data-filter="dinamicos">Dinámicos</button>
+          <button class="filter-btn" data-filter="powertrain">Powertrain</button>
+          <button class="filter-btn" data-filter="suspension">Suspensión</button>
+        </div>
+
+        <!-- Members grid -->
+        <div class="team__grid" id="team-grid">
+
+          <!-- ── ADMINISTRACIÓN ── -->
+          <article class="member-card reveal" data-team="admin"
+            data-role="Fundadora / Presidente"
+            data-career="Ingeniería Mecánica y Ciencia de Datos"
+            data-career-icon="assets/mecanica.png"
+            data-linkedin="https://www.linkedin.com/in/catalina-polo-005bb4250/"
+            data-bio="Estudiante de Ingeniería Mecánica y Ciencia de Datos en la Pontificia Universidad Javeriana. Fundadora del Semillero de Investigación Escudería Xaveriana. Apasionada por la investigación aplicada, el diseño mecánico y el análisis de datos para resolver problemas reales.">
+            <img src="assets/foto cata.jpg" alt="Catalina Polo" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Catalina Polo</h3>
+              <p class="member-card__role">Ing. Mecánica</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <article class="member-card reveal" data-team="admin"
+            data-role="Community Manager / Powertrain"
+            data-career="Ingeniería Mecatrónica"
+            data-career-icon="assets/mecatro.png"
+            data-linkedin="https://www.linkedin.com/in/maria-paz-jimenez-bustamante/"
+            data-bio="">
+            <img src="assets/foto mapis.jpg" alt="Maria Paz" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Maria Paz</h3>
+              <p class="member-card__role">Ing. Mecatrónica</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <article class="member-card member-card--noph reveal" data-team="admin"
+            data-role="Profesor Instructor"
+            data-career="Profesor"
+            data-career-icon=""
+            data-bio="">
+            <img src="assets/no-ph.jpg" alt="Jorge Macias" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Jorge Macias</h3>
+              <p class="member-card__role">Profesor Instructor</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <article class="member-card member-card--noph reveal" data-team="admin"
+            data-role="Finanzas"
+            data-career="Ingeniería Industrial"
+            data-career-icon="assets/industrial.png"
+            data-linkedin="https://www.linkedin.com/in/natalia-c-a22412235"
+            data-bio="Y entonces, se miró al espejo y decidió que la recordarían por loca, por rebelde, y por libre.">
+            <img src="assets/no-ph.jpg" alt="Natalia C." class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Natalia C.</h3>
+              <p class="member-card__role">Ing. Industrial</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <article class="member-card reveal" data-team="admin"
+            data-role="Web Master"
+            data-career="Ingeniería de Sistemas"
+            data-career-icon="assets/migao.png"
+            data-linkedin="https://www.linkedin.com/in/marlon-restrepo-078261268/"
+            data-bio="Estudio ingeniería de sistemas, apasionado por el aprendizaje.">
+            <img src="assets/foto marlon.jpg" alt="Marlon Restrepo" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Marlon Restrepo</h3>
+              <p class="member-card__role">Ing. de Sistemas</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <!-- ── CHASIS ── -->
+          <article class="member-card reveal" data-team="chasis"
+            data-role="Chasis"
+            data-career="Ingeniería Mecatrónica"
+            data-career-icon="assets/mecatro.png"
+            data-email="jsrubio08@gmail.com"
+            data-bio="">
+            <img src="assets/juan rubio.jpg" alt="Juan Rubio" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Juan Rubio</h3>
+              <p class="member-card__role">Ing. Mecatrónico</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <article class="member-card reveal" data-team="chasis"
+            data-role="Chasis"
+            data-career="Ingeniería Mecatrónica"
+            data-career-icon="assets/mecatro.png"
+            data-linkedin="https://www.linkedin.com/in/nicolas-vera-8ba80b392/"
+            data-bio="">
+            <img src="assets/nicolas vera.jpg" alt="Nicolas Vera" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Nicolas Vera</h3>
+              <p class="member-card__role">Ing. Mecatrónico</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <!-- ── DINÁMICOS ── -->
+          <article class="member-card reveal" data-team="dinamicos"
+            data-role="Dinámicos"
+            data-career="Ingeniería Mecatrónica"
+            data-career-icon="assets/mecatro.png"
+            data-linkedin="https://www.linkedin.com/in/l-soph%C3%ADa-ovalle-s%C3%A1nchez-821148242/"
+            data-bio="">
+            <img src="assets/sophia.jpg" alt="Sophía Ovalle" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Sophía Ovalle</h3>
+              <p class="member-card__role">Ing. Mecatrónica</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <article class="member-card member-card--noph reveal" data-team="dinamicos"
+            data-role="Dinámicos"
+            data-career="Ingeniería Industrial"
+            data-career-icon="assets/industrial.png"
+            data-linkedin="https://www.linkedin.com/in/juandcepedad/"
+            data-bio="">
+            <img src="assets/no-ph.jpg" alt="Juan Cepeda" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Juan Cepeda</h3>
+              <p class="member-card__role">Ing. Industrial</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <!-- ── POWERTRAIN ── -->
+          <article class="member-card reveal" data-team="powertrain"
+            data-role="Powertrain"
+            data-career="Ingeniería Mecatrónica"
+            data-career-icon="assets/mecatro.png"
+            data-email="sergioa.costa@outlook.com"
+            data-bio="">
+            <img src="assets/sergio.jpg" alt="Sergio Costa" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Sergio Costa</h3>
+              <p class="member-card__role">Ing. Mecatrónico</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <article class="member-card reveal" data-team="powertrain"
+            data-role="Powertrain"
+            data-career="Ingeniería Electrónica"
+            data-career-icon="assets/electronica.png"
+            data-email="sdurang21@gmail.com"
+            data-bio="">
+            <img src="assets/sofia.jpg" alt="Sofia Duran" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Sofia Duran</h3>
+              <p class="member-card__role">Ing. Electrónica</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <article class="member-card reveal" data-team="powertrain"
+            data-role="Powertrain"
+            data-career="Ingeniería Mecatrónica"
+            data-career-icon="assets/mecatro.png"
+            data-email="ruizgantiva.nicollestefany@gmail.com"
+            data-bio="">
+            <img src="assets/sofia ruiz.jpg" alt="Nicolle Ruiz" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Nicolle Ruiz</h3>
+              <p class="member-card__role">Ing. Mecatrónica</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <article class="member-card reveal" data-team="powertrain"
+            data-role="Powertrain"
+            data-career="Ingeniería Industrial"
+            data-career-icon="assets/industrial.png"
+            data-email="henryapaza3324@gmail.com"
+            data-bio="Soy estudiante de Ingeniería Industrial y miembro del Semillero Fórmula SAE de la Pontificia Universidad Javeriana. Mi rol se enfoca en la gestión de procesos, análisis de datos y optimización operativa para apoyar el desarrollo del monoplaza.">
+            <img src="assets/henry.jpg" alt="Henry Apaza" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Henry Apaza</h3>
+              <p class="member-card__role">Ing. Industrial</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <!-- ── SUSPENSIÓN ── -->
+          <article class="member-card reveal" data-team="suspension"
+            data-role="Suspensión"
+            data-career="Ingeniería Mecánica"
+            data-career-icon="assets/mecanica.png"
+            data-bio="">
+            <img src="assets/juanjo.jpg" alt="Juan Urrea" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Juan Urrea</h3>
+              <p class="member-card__role">Ing. Mecánico</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <article class="member-card reveal" data-team="suspension"
+            data-role="Suspensión"
+            data-career="Ingeniería Mecánica"
+            data-career-icon="assets/mecanica.png"
+            data-email="juanj.lopez@javeriana.edu.co"
+            data-bio="">
+            <img src="assets/juan lopez.jpg" alt="Juan Lopez" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Juan Lopez</h3>
+              <p class="member-card__role">Ing. Mecánico</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <article class="member-card reveal" data-team="suspension"
+            data-role="Suspensión"
+            data-career="Ingeniería Mecánica"
+            data-career-icon="assets/mecanica.png"
+            data-linkedin="http://www.linkedin.com/in/julián-ferney-amaya-moreno-3700321ab"
+            data-bio="">
+            <img src="assets/julian.jpg" alt="Julian Amaya" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Julian Amaya</h3>
+              <p class="member-card__role">Ing. Mecánico</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <article class="member-card reveal" data-team="suspension"
+            data-role="Suspensión"
+            data-career="Ingeniería Mecánica"
+            data-career-icon="assets/mecanica.png"
+            data-linkedin="https://www.linkedin.com/in/karen-michell-jimenez-9728b32a0/"
+            data-bio="">
+            <img src="assets/karen.jpg" alt="Karen Jimenez" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Karen Jimenez</h3>
+              <p class="member-card__role">Ing. Mecánica</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+          <article class="member-card reveal" data-team="suspension"
+            data-role="Suspensión"
+            data-career="Ingeniería Mecánica"
+            data-career-icon="assets/mecanica.png"
+            data-email="tawilmunir66@gmail.com"
+            data-bio="">
+            <img src="assets/munir.jpg" alt="Munir Tawil" class="member-card__photo" />
+            <div class="member-card__overlay">
+              <h3 class="member-card__name">Munir Tawil</h3>
+              <p class="member-card__role">Ing. Mecánico</p>
+              <span class="member-card__cta">Ver perfil →</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ SPONSORS ═══════════════ -->
+    <section id="sponsors" class="section section--dark">
+      <div class="container">
+        <h2 class="section__title section__title--center reveal">NUESTROS <span class="accent">PATROCINADORES</span></h2>
+        <div class="sponsors__grid reveal">
+          <div class="sponsor-card">
+            <img src="assets/SolidWorks-Logo.png" alt="SolidWorks" />
+          </div>
+          <div class="sponsor-card">
+            <img src="assets/ANSYS_logo.png" alt="ANSYS" />
           </div>
         </div>
       </div>
-      <div class="footer"><footer><h2>Contacto</h2><p>Catalina Polo</p><p>Presidente</p><p class="correo">ca_polo@javeriana.edu.co</p></footer></div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        slidesPerView: 3, // ⭐ cuántas “tarjetas” ves al tiempo
-        spaceBetween: 30,
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
+  </main>
 
-        // If we need pagination
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/xaverian logo.png" alt="Escudería Xaverian" class="footer__logo" />
+          <p class="footer__tagline">Cuando la ingeniería se convierte en arte.</p>
+        </div>
+        <div class="footer__contact">
+          <h3>Contacto</h3>
+          <p><strong>Catalina Polo</strong> — Presidente</p>
+          <a href="mailto:ca_polo@javeriana.edu.co" class="footer__email">ca_polo@javeriana.edu.co</a>
+        </div>
+        <div class="footer__uni">
+          <img src="assets/javeriana escudo.png" alt="Pontificia Universidad Javeriana" class="footer__uni-logo" />
+          <p>Pontificia Universidad Javeriana</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Escudería Xaverian. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+  <!-- ═══════════════ MEMBER MODAL ═══════════════ -->
+  <div class="modal" id="member-modal" aria-hidden="true">
+    <div class="modal__backdrop" id="modal-backdrop"></div>
+    <div class="modal__content" id="modal-content">
+      <button class="modal__close" id="modal-close" aria-label="Cerrar">&times;</button>
+      <div class="modal__body">
+        <div class="modal__photo-wrap">
+          <img src="" alt="" class="modal__photo" id="modal-photo" />
+        </div>
+        <div class="modal__info">
+          <span class="modal__role-badge" id="modal-role"></span>
+          <h2 class="modal__name" id="modal-name"></h2>
+          <div class="modal__career" id="modal-career">
+            <img src="" alt="" id="modal-career-icon" />
+            <span id="modal-career-text"></span>
+          </div>
+          <div class="modal__links" id="modal-links"></div>
+          <p class="modal__bio" id="modal-bio"></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        // And if we need scrollbar
-        scrollbar: {
-          el: ".swiper-scrollbar",
-        },
-        breakpoints: {
-          0: {
-            // cel
-            slidesPerView: 1,
-            allowTouchMove: true,
-          },
-          768: {
-            // tablet
-            slidesPerView: 2,
-          },
-          1024: {
-            // pc
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
