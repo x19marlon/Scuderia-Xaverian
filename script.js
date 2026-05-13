@@ -8,22 +8,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const splashSound = document.getElementById('splash-sound');
 
   // Function to play sound safely
+  // Function to play sound safely
   const playSplashSound = () => {
     if (splashSound && splashSound.paused) {
-      splashSound.play().catch(err => {
-        console.log("Autoplay prevented. Audio will play on first interaction.");
-      });
+      splashSound.play()
+        .then(() => {
+          // If it started playing, we can remove the click listener to clean up
+          document.removeEventListener('click', playSplashSound);
+        })
+        .catch(err => {
+          console.log("Autoplay blocked by browser. Awaiting user interaction.");
+        });
     }
   };
 
-  // 1. Try to play immediately when DOM is ready
-  playSplashSound();
+  // Try to play as soon as possible
+  if (splashSound) {
+    // If readyState is enough, try playing immediately
+    if (splashSound.readyState >= 2) {
+      playSplashSound();
+    } else {
+      splashSound.addEventListener('canplay', playSplashSound, { once: true });
+    }
+  }
 
-  // 2. Fallback: play on first click ANYWHERE on the splash screen
-  // This is the most reliable way to bypass browser autoplay blocks.
-  splash.addEventListener('click', () => {
-    playSplashSound();
-  }, { once: true });
+  // Fallback: play on first click ANYWHERE on the screen
+  document.addEventListener('click', playSplashSound, { once: true });
 
   // Prevent scrolling while splash is active
   document.body.style.overflow = 'hidden';
