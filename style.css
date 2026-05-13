@@ -1054,6 +1054,12 @@ ul {
    RESPONSIVE — Tablet (768px)
    ═══════════════════════════════════════════════ */
 @media(max-width:768px) {
+  .nav__logo img {
+  height: 50px;
+  width: auto;
+  transition: var(--transition)
+}
+
   .nav__links {
     position: fixed;
     top: 0;
