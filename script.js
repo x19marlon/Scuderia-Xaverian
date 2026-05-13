@@ -3,6 +3,24 @@
    ═══════════════════════════════════════════════ */
 
 document.addEventListener('DOMContentLoaded', () => {
+  /* ── Splash Screen Logic ── */
+  const splash = document.getElementById('splash-screen');
+  
+  // Prevent scrolling while splash is active
+  document.body.style.overflow = 'hidden';
+
+  window.addEventListener('load', () => {
+    // Show splash for at least 2.5 seconds to appreciate the animation
+    setTimeout(() => {
+      splash.classList.add('splash--hidden');
+      document.body.style.overflow = '';
+      
+      // Optional: Remove from DOM after transition
+      setTimeout(() => {
+        splash.remove();
+      }, 1000);
+    }, 2500);
+  });
 
   /* ── Header scroll effect ── */
   const header = document.getElementById('site-header');
