@@ -5,16 +5,37 @@
 document.addEventListener('DOMContentLoaded', () => {
   /* ── Splash Screen Logic ── */
   const splash = document.getElementById('splash-screen');
-  
+  const splashSound = document.getElementById('splash-sound');
+
+  // Function to play sound safely
+  const playSplashSound = () => {
+    if (splashSound && splashSound.paused) {
+      splashSound.play().catch(err => {
+        console.log("Autoplay prevented. Audio will play on first interaction.");
+      });
+    }
+  };
+
+  // 1. Try to play immediately when DOM is ready
+  playSplashSound();
+
+  // 2. Fallback: play on first click ANYWHERE on the splash screen
+  // This is the most reliable way to bypass browser autoplay blocks.
+  splash.addEventListener('click', () => {
+    playSplashSound();
+  }, { once: true });
+
   // Prevent scrolling while splash is active
   document.body.style.overflow = 'hidden';
 
   window.addEventListener('load', () => {
+    // We already tried to play in DOMContentLoaded, but we try again here just in case.
+    playSplashSound();
     // Show splash for at least 2.5 seconds to appreciate the animation
     setTimeout(() => {
       splash.classList.add('splash--hidden');
       document.body.style.overflow = '';
-      
+
       // Optional: Remove from DOM after transition
       setTimeout(() => {
         splash.remove();
@@ -32,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Hamburger menu ── */
   const hamburger = document.getElementById('hamburger');
-  const navLinks  = document.getElementById('nav-links');
+  const navLinks = document.getElementById('nav-links');
 
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -87,21 +108,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ── Member modal ── */
-  const modal       = document.getElementById('member-modal');
-  const modalClose   = document.getElementById('modal-close');
+  const modal = document.getElementById('member-modal');
+  const modalClose = document.getElementById('modal-close');
   const modalBackdrop = document.getElementById('modal-backdrop');
-  const modalPhoto   = document.getElementById('modal-photo');
-  const modalName    = document.getElementById('modal-name');
-  const modalRole    = document.getElementById('modal-role');
-  const modalCareer  = document.getElementById('modal-career');
+  const modalPhoto = document.getElementById('modal-photo');
+  const modalName = document.getElementById('modal-name');
+  const modalRole = document.getElementById('modal-role');
+  const modalCareer = document.getElementById('modal-career');
   const modalCarIcon = document.getElementById('modal-career-icon');
   const modalCarText = document.getElementById('modal-career-text');
-  const modalLinks   = document.getElementById('modal-links');
-  const modalBio     = document.getElementById('modal-bio');
+  const modalLinks = document.getElementById('modal-links');
+  const modalBio = document.getElementById('modal-bio');
 
   function openModal(card) {
     const photo = card.querySelector('.member-card__photo');
-    const name  = card.querySelector('.member-card__name').textContent;
+    const name = card.querySelector('.member-card__name').textContent;
 
     modalPhoto.src = photo.src;
     modalPhoto.alt = name;
@@ -127,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Links
     modalLinks.innerHTML = '';
     const linkedin = card.dataset.linkedin;
-    const email    = card.dataset.email;
+    const email = card.dataset.email;
 
     if (linkedin) {
       const a = document.createElement('a');

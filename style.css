@@ -730,18 +730,20 @@ ul {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
   padding-bottom: 40px;
-  align-items: start
+  align-items: center;
 }
 
 .footer__brand {
   display: flex;
   flex-direction: column;
-  gap: 12px
+  gap: 12px;
+  align-items: center;
+  text-align: center;
 }
 
 .footer__logo {
-  height: 60px;
-  width: auto
+  width: 300px;
+  
 }
 
 .footer__tagline {
@@ -749,6 +751,14 @@ ul {
   font-size: 1rem;
   color: var(--c-text-dim);
   font-style: italic
+}
+
+.footer__contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .footer__contact h3 {
@@ -781,7 +791,8 @@ ul {
 .footer__uni {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  text-align: center;
   gap: 10px
 }
 
@@ -793,7 +804,7 @@ ul {
 .footer__uni p {
   font-size: .85rem;
   color: var(--c-text-dim);
-  text-align: right
+  text-align: center
 }
 
 .footer__bottom {
